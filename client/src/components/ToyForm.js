@@ -28,7 +28,10 @@ function ToyForm({ onAddToy }) {
       },
       body: JSON.stringify(newToy),
     })
-      .then((r) => r.json())
+      .then((r) => {
+        console.log(r)
+        return r.json()
+      })
       .then((newToy) => {
         setFormData({
           name: "",

@@ -64,10 +64,32 @@ developing your own process.
 
   - How I debugged:
 
+  Labs to look at: Debugging Network Requests
+
+  Problem 1: 500 (Internal Server Error)
+
+  Solution 1: toys_controller.rb, create, Toy instead of Toys
+
+  Problem 2: 404 (Not Found) for invalid url
+
+  Solution 2: 
+
 - Update the number of likes for a toy
 
   - How I debugged:
 
+  Labs to look at: Debugging Network Requests, Rails Update and Destroy Lab
+  
+  Problem: Uncaught (in promise) SyntaxError: Unexpected end of JSON input
+
+  Solution: toys_controller.rb, update, render json: toy
+
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+
+  Labs to look at: Debugging Network Requests
+
+  Problem: 404 (Not Found), ActionController::RoutingError (No route matches [DELETE]
+
+  Solution: routes.rb, :destroy
